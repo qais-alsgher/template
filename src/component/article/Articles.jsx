@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiArrowLongRight } from "react-icons/hi2";
 import './articles.css';
-import Title from './Title';
+import Title from '../title/Title';
 
 
 function Articles() {
