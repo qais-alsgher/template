@@ -6,6 +6,8 @@ import Landing from './component/landing/Landing';
 import Articles from './component/article/Articles';
 import Gallery from './component/gallery/Gallery';
 import Features from './component/feature/Features';
+import Testmonials from './component/testimonials/Testmonials';
+import Team from './component/team/Team';
 function App() {
   return (
     <div className="App">
@@ -14,7 +16,8 @@ function App() {
       <Articles />
       <Gallery />
       <Features />
-
+      <Testmonials />
+      <Team />
     </div>
   );
 }
