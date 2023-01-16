@@ -1,0 +1,47 @@
+.testmonials{
+    position: relative; 
+    background-color:  #ECECEC;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.testmonials .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.testmonials .container .box{
+padding: 20px;
+background-color: white;
+box-shadow: 0 2px 4px rgb(0 0 0 /7%);
+border-radius: 6px;
+position: relative;
+}
+
+.testmonials .box img{
+position: absolute;
+top: -50px;
+right:-10px;
+height: 100px;
+border-radius: 50%;
+border: 10px solid #ECECEC;
+}
+
+.testmonials .box h3{
+margin: 0 0 10px;
+
+} 
+
+.testmonials .box .title{
+    color: #777;
+    margin-bottom: 10px;
+    display: block;
+}
+.testmonials .box .rate .filled{
+color:#ffc107;
+}
+
+.testmonials .box p{
+
+}
