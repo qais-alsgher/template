@@ -8,6 +8,8 @@ import Gallery from './component/gallery/Gallery';
 import Features from './component/feature/Features';
 import Testmonials from './component/testimonials/Testmonials';
 import Team from './component/team/Team';
+import Services from './component/services/Services';
+import OuerSkills from './component/ouerSkills/OuerSkills';
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,8 @@ function App() {
       <Features />
       <Testmonials />
       <Team />
+      <Services />
+      <OuerSkills />
     </div>
   );
 }
