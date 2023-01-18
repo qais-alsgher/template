@@ -1,0 +1,153 @@
+.event {
+  position: relative;
+  padding: 40px 0;
+  background-color: white;
+}
+
+.event .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.event .container img {
+  width: 450px;
+}
+
+@media (max-width: 991px) {
+  .event .container img {
+    display: none;
+  }
+}
+.event .info {
+  flex: 1;
+}
+
+.event .info .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.event .info .unit {
+  text-align: center;
+  width: 75px;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.event .info .unit:hover,
+.event .info .unit:hover :last-child {
+  border-color: #1fd1f9;
+}
+
+.event .info .unit span {
+  display: block;
+  transition: 0.3s;
+}
+
+.event .info .unit :first-child {
+  font-size: 35px;
+  font-weight: bold;
+  color: #1fd1f9;
+  padding: 15px;
+}
+
+.event .info .unit :last-child {
+  padding: 8px 10px;
+  font-size: 12px;
+  border-top: 1px solid #d4d4d4;
+}
+
+.event .info h3 {
+  text-align: center;
+  margin: 30px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.event .info p {
+  margin: 20px 0 0;
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  line-height: 1.7;
+}
+
+.event .subscribe {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.event .subscribe form {
+  background-color: #f6f5f5;
+  width: 600px;
+  margin: 20px auto;
+  padding: 30px 40px;
+  border: 1px solid #d4d4d4;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .event .subscribe form {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.event .subscribe form input[type="email"] {
+  flex: 1;
+  padding: 20px;
+  border-radius: 50px;
+  caret-color: #1fd1f9;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .event .subscribe form input[type="email"] {
+    border-radius: 0;
+  }
+}
+
+.event .subscribe form input[type="email"]::placeholder {
+  transition: opacity 0.3s;
+}
+
+.event .subscribe form input[type="email"]:focus::placeholder {
+  opacity: 0;
+}
+
+.event .subscribe form input[type="email"]:focus {
+  outline: none;
+}
+
+.event .subscribe form input[type="submit"] {
+  border-radius: 50px;
+  padding: 20px;
+  background-color: #1fd1f9;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .event .subscribe form input[type="submit"] {
+    border-radius: 0;
+  }
+}
+
+.event .subscribe form input[type="submit"]:hover {
+  background-color: #1aaac4;
+  cursor: pointer;
+}

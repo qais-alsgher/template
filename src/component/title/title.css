@@ -1,82 +1,81 @@
-.m-title{
-    margin: auto;
-    font-size: 30px;
-    padding: 10px 20px;
-    text-align: center;
-    position: relative;
-    border: 2px solid black;
-    width: fit-content;
-    z-index:1;
-    transition: 03s;
-    margin: 100px auto;
-    text-transform:uppercase;
+.m-title {
+  margin: auto;
+  font-size: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  position: relative;
+  border: 2px solid black;
+  width: fit-content;
+  z-index: 1;
+  transition: 03s;
+  margin: 100px auto;
+  text-transform: uppercase;
 }
 
-.m-title::after{
-content: '';
-position: absolute;
-width:12px;
-height:12px;
-background-color:#1F97F6;
-border-radius: 50%;
-top:50%;
-transform: translateY(-50%);
-right: -30%;
-
+.m-title::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #1f97f6;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -30%;
 }
 
-.m-title::before{
-content: '';
-position: absolute;
-width:12px;
-height:12px;
-background-color:#1F97F6;
-border-radius: 50%;
-top:50%;
-transform: translateY(-50%);
-left: -30%;
+.m-title::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #1f97f6;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -30%;
 }
 
-.m-title:hover::after{
-    z-index: -1;
-    animation: right-move 0.5s forwards;
+.m-title:hover::after {
+  z-index: -1;
+  animation: right-move 0.5s forwards;
 }
 
-.m-title:hover::before{
-    z-index: -1;
-    animation: left-move 0.5s forwards;
+.m-title:hover::before {
+  z-index: -1;
+  animation: left-move 0.5s forwards;
 }
 
-.m-title:hover{
-    color:white;
-    border: 2px solid white;
-    transition-delay: 0.5s;
+.m-title:hover {
+  color: white;
+  border: 2px solid white;
+  transition-delay: 0.5s;
 }
 
-@keyframes right-move{
-    50%{
-        right:0;
-        width: 12px;
-        height: 12px;
-    }
-    100%{
-        border-radius: 0;
-        right:0;
-        width: 50%;
-        height: 100%;
-    }
+@keyframes right-move {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    border-radius: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
 }
 
-@keyframes left-move{
-    50%{
-        left:0;
-        width: 12px;
-        height: 12px;
-    }
-    100%{
-        border-radius: 0;
-        left:0;
-        width: 51%;
-        height: 100%;
-    }
+@keyframes left-move {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    border-radius: 0;
+    left: 0;
+    width: 51%;
+    height: 100%;
+  }
 }
