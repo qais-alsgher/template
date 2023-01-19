@@ -13,6 +13,8 @@ import OuerSkills from "./component/ouerSkills/OuerSkills";
 import WorkSteps from "./component/workSteps/WorkSteps";
 import Event from "./component/event/Event";
 import Pricing from "./component/pricing/Pricing";
+import Videos from "./component/videos/Videos";
+import Stats from "./component/stats/Stats";
 function App() {
   return (
     <div className="App">
@@ -28,6 +30,8 @@ function App() {
       <WorkSteps />
       <Event />
       <Pricing />
+      <Videos />
+      <Stats />
     </div>
   );
 }
