@@ -15,6 +15,8 @@ import Event from "./component/event/Event";
 import Pricing from "./component/pricing/Pricing";
 import Videos from "./component/videos/Videos";
 import Stats from "./component/stats/Stats";
+import Discount from "./component/discount/Discount";
+import Footer from "./component/footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -32,6 +34,8 @@ function App() {
       <Pricing />
       <Videos />
       <Stats />
+      <Discount />
+      <Footer />
     </div>
   );
 }
